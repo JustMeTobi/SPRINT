@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordplan for Smykbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body"> 
+
+    <header>    
+    <div class="navbar">
+        <div class="logo">Your Logo</div>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#book bord"></a>Book bord</li>
+            <li class="nav-item"><a href="#events"></a>Events</li>
+            <li class="nav-item"><a href="#workshops"></a>Workshops</li>
+            <li class="nav-item"><a href="#priser"></a>Priser</li>
+            <li class="nav-item"><a href="#cafe"></a>Café</li>
+            <li class="nav-item"><a href="#gavekort"></a>Gavekort</li>
+            <li class="nav-item"><a href="#job"></a>Job</li>
+            <li class="nav-item"><a href="#find os"></a>Find os</li>
+            <li class="nav-item"><a href="#om"></a>Om</li>
+        </ul>
+        <div class="language-switcher">
+            <label for="language-select">Language:</label>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="da">Danish</option>
+            </select>
+        </div>
+    </div>
+    </header>
+    <main>
+        <h1>Anmodning til bookning af Bordplan</h1>
+        <section>
+            <h2>Vigtig infomation</h2>
+                <h3>Har du været her før?</h3>
+                <form>
+                    <input type="radio" id="ja" name="BHB" value="ja">
+                    <label for="ja">Ja</label>
+                    <input type="radio" id="nej" name="BHB" value="nej">
+                    <label for="nej">Nej</label><br>
+                  </form>
+            <h2>Dato & Tid</h2>
+                  <form>
+                    <label for="monthmax">Insæt din måned
+                    </label>
+                    <input type="date" id="monthmax" name="monthmax" max="2026-12-20">
+                </form>
+                <form>
+                    <label for="Tid"> Indsæt din tid 
+                    </label>
+                    <input type="time" id="tid" name="tid">
+                </form>                  
+            <h2>Bordplan</h2>
+            <button>Gå til bordplan</button>
+            <h2>Perle udvalg</h2>
+            <button>Gå til perle udvalg</button>
+        </section>
+
+        <section class="info">
+            
+            <p class="info-bar">Information</p>
+            <p>Fuldt navn</p>
+            <input type="name">
+            <p>Tlf.</p>
+            <input type="tel">
+            <p>E-mail</p>
+            <input type="email">
+            <p>Særlige ønsker</p>
+            <input type="text-box" name="særlig" id="sø-box"> <br>
+
+            <div class="dropdown">
+                <span>Begivenheder</span>
+                <div class="dropdown-content">
+                    <p>Fødselsdag</p>
+                    <p>Firma</p>
+                    <p>Polterabend</p>
+                    <p>Skoleklasse</p>
+                    <p>Vennegruppe</p>
+                    <p>Familie</p>
+                </div>
+            </div>
+
+            <div>
+                <Button class="booking-button">Bekræft booking</Button>
+            </div>
+            <!-- OPGAVE: Lav en pop-up med bordplan og med perle udvalg 
+            Lav footer
+            Lav box til hover og lav flex så det er to boxe-->
+            
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+        
+    </footer>
+</body>
+</html>
