@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bordplan for Smykbar</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body class="body"> 
 
@@ -58,9 +59,57 @@
                     <input type="time" id="tid" name="tid">
                 </form>                  
                 <h2>Bordplan</h2>
-                <button>Gå til bordplan</button>
+                <div class="container">
+                    <h2>Smykbar bordplan</h2> 
+                    <button onclick="document.getElementById('id01').style.display='block'" class="modal-button">Bordplan</button>
+                  
+                    <div id="id01" class="modal">
+                      <div class="modal-content">
+                        <div class="container">
+                            <header class="w3-container w3-teal"> 
+                                <span onclick="document.getElementById('id01').style.display='none'" 
+                                class="w3-button w3-display-topright">&times;</span>
+                                <h2>Modal Header</h2>
+                              </header>
+                           </span>
+                        <div class="dropdown">
+                          <button class="dropbtn">Dropdown</button>
+                          <div class="dropdown-content">
+                            <a href="#">Etage 1</a>
+                            <a href="#">Etage 2</a>
+                          </div>
+                          <p>Billede af etage valg.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <h2>Perle udvalg</h2>
-                <button>Gå til perle udvalg</button>
+                <div class="container">
+                    <h2>Perle udvalg</h2> 
+                    <button onclick="document.getElementById('id02').style.display='block'" class="modal-button">Perle udvalg</button>
+                  
+                    <div id="id02" class="modal">
+                      <div class="modal-content">
+                        <div class="container">
+                            <header class="w3-container w3-teal"> 
+                                <span onclick="document.getElementById('id02').style.display='none'" 
+                                class="w3-button w3-display-topright">&times;</span>
+                                <h2>Modal Header</h2>
+                              </header>
+                           </span>
+                        <div class="dropdown">
+                          <button class="dropbtn">Dropdown</button>
+                          <div class="dropdown-content">
+                            <a href="#">Birthstones</a>
+                            <a href="#">Ocean perles</a>
+                          </div>
+                          <p>Række af perler.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </section>
         
             <!-- Second Column -->
@@ -103,3 +152,4 @@
     </footer>
 </body>
 </html>
+
