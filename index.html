@@ -10,7 +10,7 @@
 
     <header>    
     <div class="navbar">
-        <div class="logo">SMYKBAR</div>
+        <div class="logo">Your Logo</div>
         <ul class="nav-list">
             <li class="nav-item"><a href="#book bord"></a>Book bord</li>
             <li class="nav-item"><a href="#events"></a>Events</li>
@@ -31,19 +31,23 @@
         </div>
     </div>
     </header>
+
     <main>
-        <h1>Anmodning til bookning af Bordplan</h1>
-        <section>
-            <h2>Vigtig infomation</h2>
+        <h1 class="main-header">Anmodning til bookning af Bordplan</h1>
+    
+        <div class="row">
+            <!-- First Column -->
+            <section class="column">
+                <h2>Vigtig information</h2>
                 <h3>Har du været her før?</h3>
                 <form>
                     <input type="radio" id="ja" name="BHB" value="ja">
                     <label for="ja">Ja</label>
                     <input type="radio" id="nej" name="BHB" value="nej">
                     <label for="nej">Nej</label><br>
-                  </form>
-            <h2>Dato & Tid</h2>
-                  <form>
+                </form>
+                <h2>Dato & Tid</h2>
+                <form>
                     <label for="monthmax">Insæt din måned
                     </label>
                     <input type="date" id="monthmax" name="monthmax" max="2026-12-20">
@@ -53,49 +57,49 @@
                     </label>
                     <input type="time" id="tid" name="tid">
                 </form>                  
-            <h2>Bordplan</h2>
-            <button>Gå til bordplan</button>
-            <h2>Perle udvalg</h2>
-            <button>Gå til perle udvalg</button>
-        </section>
-
-        <section class="info">
-            
-            <p class="info-bar">Information</p>
-            <p>Fuldt navn</p>
-            <input type="name">
-            <p>Tlf.</p>
-            <input type="tel">
-            <p>E-mail</p>
-            <input type="email">
-            <p>Særlige ønsker</p>
-            <input type="text-box" name="særlig" id="sø-box"> <br>
-
-            <div class="dropdown">
-                <span>Begivenheder</span>
-                <div class="dropdown-content">
-                    <p>Fødselsdag</p>
-                    <p>Firma</p>
-                    <p>Polterabend</p>
-                    <p>Skoleklasse</p>
-                    <p>Vennegruppe</p>
-                    <p>Familie</p>
+                <h2>Bordplan</h2>
+                <button>Gå til bordplan</button>
+                <h2>Perle udvalg</h2>
+                <button>Gå til perle udvalg</button>
+            </section>
+        
+            <!-- Second Column -->
+            <section class="column">
+                <h2 class="info-bar">Information</h2>
+                <p>Fuldt navn</p>
+                <input type="name">
+                <p>Tlf.</p>
+                <input type="tel">
+                <p>E-mail</p>
+                <input type="email">
+                <p>Særlige ønsker</p>
+                <input type="text" name="særlig" id="sø-box"> <br>
+        
+                <div class="dropdown">
+                    <span>Begivenheder</span>
+                    <div class="dropdown-content">
+                        <p>Fødselsdag</p>
+                        <p>Firma</p>
+                        <p>Polterabend</p>
+                        <p>Skoleklasse</p>
+                        <p>Vennegruppe</p>
+                        <p>Familie</p>
+                    </div>
                 </div>
-            </div>
-
-            <div>
-                <Button class="booking-button">Bekræft booking</Button>
-            </div>
-            <!-- OPGAVE: Lav en pop-up med bordplan og med perle udvalg 
-            Lav footer
-            Lav box til hover og lav flex så det er to boxe-->
-            
-            </div>
-        </section>
+            </section>
+        </div>
+        
+        <!-- End of information section -->
+        <div>
+            <button class="booking-button">Bekræft booking</button>
+        </div>
     </main>
+    
+    <!-- Footer section -->
     <footer>
-        
-        
+        <a href="https://www.smykbar.dk/"><img src="images/smykbar_logo_ALLE-02.png" alt="SMYKBAR LOGO" class="footer-logo">
+        </a>
+
     </footer>
 </body>
 </html>
