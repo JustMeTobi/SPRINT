@@ -10,7 +10,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #ee81a0;
+            background-color: #003153;
             color: #fff;
             padding: 10px 20px;
         }
@@ -19,6 +19,8 @@
         .logo {
             font-size: 24px;
             font-weight: bold;
+            display: flex;
+            justify-content: center;
         }
 
         /* Style for the navigation list */
@@ -68,6 +70,13 @@
         @media screen and (max-width:600px) {
             .column {
             width: 100%;
+            }
+
+            .navbar{
+                width: 150%;
+            }
+            .headerlogo{
+                width: 100%;
             }
         }
 
@@ -224,3 +233,12 @@
   .tid {
     width: 50px;
   }
+
+  .headerlogo{
+    width: 110px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+  }
+
