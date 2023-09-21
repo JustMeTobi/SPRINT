@@ -216,3 +216,11 @@
           .dropdown:hover .dropbtn {background-color: #3e8e41;}
         
         
+ /* dato og tid billede*/
+
+ .Dato{
+    width: 50px;
+  }
+  .tid {
+    width: 50px;
+  }
