@@ -6,9 +6,10 @@
     <title>Bordplan for Smykbar</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body class="body"> 
 
+<body class="body"> 
     <header>    
     <div class="navbar">
       <div class="logo"><img class="headerlogo" src="images/smykbar_logo.png" alt="smykbar logo"></div>
@@ -22,14 +23,17 @@
         </div>
     </div>
     </header>
-
+      <!-- Main header -->
+      <h1 class="main-header">Anmodning til bookning af Bordplan</h1>
+    
     <main>
-        <h1 class="main-header">Anmodning til bookning af Bordplan</h1>
+        
     
         <div class="row">
             <!-- First Column -->
-            <section class="column">
+            <section class="column leftcol">
                 <h2>Vigtig information</h2>
+                <p>Bordreservationen gælder i 2 timer inkl. tid til at betale ved disken. <b>GEM</b> din bekræftelses-mail. Så kan du let klikke på linket og MELDE AFBUD 24 TIMER FØR, hvis I bliver forhindret i at komme.</p>
                 <h3>Har du været her før?</h3>
                 <form>
                     <input type="radio" id="ja" name="BHB" value="ja">
@@ -38,7 +42,7 @@
                     <label for="nej">Nej</label><br>
                 </form>
                 <h2>Dato & Tid</h2>
-                <img class="Dato"  src="images/dato.png" alt="dato">
+                <img class="dato"  src="images/dato.png" alt="dato">
                 <img class="tid" src="images/tid.png" alt="tid">
                 <form>
                     <label for="monthmax">Insæt din måned
@@ -104,7 +108,7 @@
             </section>
         
             <!-- Second Column -->
-            <section class="column">
+            <section class="column rightcol">
                 <h2 class="info-bar">Information</h2>
                 <p>Fuldt navn</p>
                 <input type="name">
