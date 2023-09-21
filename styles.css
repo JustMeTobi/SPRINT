@@ -48,6 +48,22 @@
             display: flex;
             justify-content: center;
         }
+        .headerlogo{
+            width: 100px;
+        }
+        .footerlogo{
+            width: 100px;
+        }
+        .navilogo{
+            width: 45px;
+        }
+
+        .tidlogo2{
+            width: 25px;
+        }
+        .tlflogo{
+            width: 25px;
+        }
 
         /* Style for the navigation list */
         .nav-list {
@@ -72,6 +88,7 @@
             font-weight: bold;
         }
 
+        
         /* Style for the language switcher */
 
         .language-switcher {
@@ -110,7 +127,7 @@
                 width: 150%;
             }
             .headerlogo{
-                width: 100%;
+                width: 50px;
             }
 
         }
@@ -225,9 +242,21 @@
                 
         /* dato og tid billede*/
 
-        .Dato{
+        .dato{
             width: 50px;
         }
         .tid {
             width: 50px;
         }
+
+        /* footer */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #003153;
+            color: #fff;
+            padding: 10px 20px;
+        }
+       
+        
