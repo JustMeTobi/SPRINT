@@ -240,10 +240,25 @@
                 
         /* dato og tid billede*/
 
+        .dt-logo {
+            display: flex;
+            justify-content: space-around;
+        }
+
         .dato{
             width: 50px;
         }
 
         .tid {
             width: 50px;
+        }
+
+        /* FOOTER */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #003153;
+            color: #fff;
+            padding: 10px 20px;
         }
