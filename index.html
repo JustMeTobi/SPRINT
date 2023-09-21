@@ -34,54 +34,53 @@
             <section class="column leftcol">
                 <h2>Vigtig information</h2>
                 <p>Bordreservationen gælder i 2 timer inkl. tid til at betale ved disken. <b>GEM</b> din bekræftelses-mail. Så kan du let klikke på linket og MELDE AFBUD 24 TIMER FØR, hvis I bliver forhindret i at komme.</p>
-                <h3>Har du været her før?</h3>
+                <h2>Har du været her før?</h2>
                 <form>
                     <input type="radio" id="ja" name="BHB" value="ja">
                     <label for="ja">Ja</label>
                     <input type="radio" id="nej" name="BHB" value="nej">
                     <label for="nej">Nej</label><br>
                 </form>
-                <h2>Dato & Tid</h2>
-                <img class="dato"  src="images/dato.png" alt="dato">
-                <img class="tid" src="images/tid.png" alt="tid">
-                <form>
+                <h2>Tid & Dato</h2>
+                <div class="dt-logo">
+                  <div class="dato-logo"><img class="dato"  src="images/dato.png" alt="dato"></div>
+                  <div class="tid-logo"><img class="tid" src="images/tid.png" alt="tid"></div>
+                </div>
+                <form class="formdato dt-logo">
                     <label for="monthmax">Insæt din måned
                     </label>
                     <input type="date" id="monthmax" name="monthmax" max="2026-12-20">
                 </form>
-                <form>
+                <br>
+                <form class="formtid dt-logo">
                     <label for="Tid"> Indsæt din tid 
                     </label>
                     <input type="time" id="tid" name="tid">
-                </form>                  
-                <div class="container">
-                    <h2>Smykbar bordplan</h2> 
-                    <button onclick="document.getElementById('id01').style.display='block'" class="modal-button">Bordplan</button>
-                  
-                    <div id="id01" class="modal">
-                      <div class="modal-content">
-                        <div class="container">
-                            <header class="w3-container w3-teal"> 
-                                <span onclick="document.getElementById('id01').style.display='none'" 
-                                class="w3-button w3-display-topright">&times;</span>
-                                <h2>bordplan</h2>
-                              </header>
-                           </span>
-                        <div class="dropdown">
-                          <button class="dropbtn">etage valg</button>
-                          <div class="dropdown-content">
-                            <a href="#">Etage 1</a>
-                            <a href="#">Etage 2</a>
-                          </div>
-                          <p>Billede af etage valg.</p>
-                        </div>
-                      </div>
-                    </div>
+                </form>
+
+  <div class="container">
+    <button onclick="document.getElementById('id01').style.display='block'" class="modal-button">Bordplan</button>            
+      <div id="id01" class="modal">
+        <div class="modal-content">
+          <div class="container">
+            <header class="w3-container w3-teal"> 
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <h2>bordplan</h2>
+            </header>
+              <div class="dropdown">
+                <button class="dropbtn">etage valg</button>
+                  <div class="dropdown-content">
+                    <a href="#">Etage 1</a>
+                    <a href="#">Etage 2</a>
                   </div>
-                </div>
+                    <p>Billede af etage valg.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>                               
                 
                 <div class="container">
-                    <h2>Perle udvalg</h2> 
                     <button onclick="document.getElementById('id02').style.display='block'" class="modal-button">Perle udvalg</button>
                   
                     <div id="id02" class="modal">
@@ -109,6 +108,7 @@
         
             <!-- Second Column -->
             <section class="column rightcol">
+              <div class="input-info">
                 <h2 class="info-bar">Information</h2>
                 <p>Fuldt navn</p>
                 <input type="name">
@@ -117,28 +117,28 @@
                 <p>E-mail</p>
                 <input type="email">
                 <p>Særlige ønsker</p>
-                <input type="text" name="særlig" id="sø-box"> <br>
-        
-                <div class="dropdown">
-                    <span>Begivenheder</span>
-                    <div class="dropdown-content">
-                        <p>Fødselsdag</p>
-                        <p>Firma</p>
-                        <p>Polterabend</p>
-                        <p>Skoleklasse</p>
-                        <p>Vennegruppe</p>
-                        <p>Familie</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        
-        <!-- End of information section -->
-        <div>
+                <input type="text" name="særlig" id="sø-box">
+              </div>
+<div class="db-begiv">
+  <label for="begiv">Begivenheder:</label>
+
+  <select name="begiv" id="begiv" class="db-begiv-content">
+    <option value="fødselsdag">Fødselsdag</option>
+    <option value="firma">Firma</option>
+    <option value="polterabend">Polterabend</option>
+    <option value="koleklasse">Skoleklasse</option>
+    <option value="vennegruppe">Vennegruppe</option>
+    <option value="familie">Familie</option>
+  </select>
+</div>
+        <div class="booking-knap">
             <button class="booking-button">Bekræft booking</button>
         </div>
-    </main>
-    
+            </section>
+        </div>
+    </main>    
+    <!-- End of information section -->
+        
     <!-- Footer section -->
     <footer>
         <a href="https://www.smykbar.dk/"><img src="images/smykbar_logo_ALLE-02.png" alt="SMYKBAR LOGO" class="footer-logo">

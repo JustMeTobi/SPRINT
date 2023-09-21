@@ -23,10 +23,7 @@
         p {
             font-size: 14px;
         }
-        
-        .booking-button:hover {
-            background-color: #ee81a0;
-        }        
+         
         .container {
             padding: 20px;
         }        
@@ -47,6 +44,9 @@
             font-weight: bold;
             display: flex;
             justify-content: center;
+        }
+        .headerlogo{
+            width: 100px;
         }
 
         /* Style for the navigation list */
@@ -110,20 +110,19 @@
                 width: 150%;
             }
             .headerlogo{
-                width: 100%;
+                width: 50px;
             }
 
         }
 
         /*  SECTION DROPDOWN  */
-        .dropdown {
+        .db-begiv {
             position: relative;
             display: inline-block;
         }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
+        .db-begiv-content {
+            display: block;
             background-color: #fff;
             min-width: 150px;
             box-shadow: #fff;
@@ -131,12 +130,11 @@
             z-index: 1;
         }
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
 
-        .booking-button {
-            font-family: serif;
+        /* BOOKING BUTTON */
+        .booking-knap {
+            display: block;
+            margin: 20px 35px;
         }
 
         .booking-button:hover {
@@ -225,9 +223,25 @@
                 
         /* dato og tid billede*/
 
-        .Dato{
+        .dt-logo {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .dato{
             width: 50px;
         }
+
+        .formdato {
+            
+            
+        }
+
         .tid {
             width: 50px;
+        }
+
+        .formtid {
+            
+            
         }
