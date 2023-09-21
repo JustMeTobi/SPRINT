@@ -48,6 +48,22 @@
         .headerlogo{
             width: 100px;
         }
+        .headerlogo{
+            width: 100px;
+        }
+        .footerlogo{
+            width: 100px;
+        }
+        .navilogo{
+            width: 45px;
+        }
+
+        .tidlogo2{
+            width: 25px;
+        }
+        .tlflogo{
+            width: 25px;
+        }
 
         /* Style for the navigation list */
         .nav-list {
@@ -72,6 +88,7 @@
             font-weight: bold;
         }
 
+        
         /* Style for the language switcher */
 
         .language-switcher {
@@ -223,12 +240,7 @@
                 
         /* dato og tid billede*/
 
-        .dt-logo {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .dato{
+        .Dato{
             width: 50px;
         }
 
@@ -239,9 +251,4 @@
 
         .tid {
             width: 50px;
-        }
-
-        .formtid {
-            
-            
         }
